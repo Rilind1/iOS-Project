@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  GithubViewer
 //
-//  Created by Blerd Foniqi on 7/17/19.
+//  Created by Rilind Hoxhaj on 7/17/19.
 //
 
 #import "AppDelegate.h"
