@@ -8,24 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		0343F9A322DF407B006B1BC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343F9A222DF407B006B1BC3 /* AppDelegate.m */; };
-		0343F9A622DF407B006B1BC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343F9A522DF407B006B1BC3 /* ViewController.m */; };
+		0343F9A622DF407B006B1BC3 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343F9A522DF407B006B1BC3 /* LogInViewController.m */; };
 		0343F9A922DF407B006B1BC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0343F9A722DF407B006B1BC3 /* Main.storyboard */; };
 		0343F9AB22DF407D006B1BC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0343F9AA22DF407D006B1BC3 /* Assets.xcassets */; };
 		0343F9AE22DF407D006B1BC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0343F9AC22DF407D006B1BC3 /* LaunchScreen.storyboard */; };
 		0343F9B122DF407D006B1BC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343F9B022DF407D006B1BC3 /* main.m */; };
+		0343F9B922DFA458006B1BC3 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0343F9B822DFA458006B1BC3 /* RegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0343F99E22DF407B006B1BC3 /* GithubViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0343F9A122DF407B006B1BC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0343F9A222DF407B006B1BC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0343F9A422DF407B006B1BC3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0343F9A522DF407B006B1BC3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0343F9A422DF407B006B1BC3 /* LogInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		0343F9A522DF407B006B1BC3 /* LogInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
 		0343F9A822DF407B006B1BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0343F9AA22DF407D006B1BC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0343F9AD22DF407D006B1BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0343F9AF22DF407D006B1BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0343F9B022DF407D006B1BC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0343F9B722DFA458006B1BC3 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		0343F9B822DFA458006B1BC3 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +63,15 @@
 			children = (
 				0343F9A122DF407B006B1BC3 /* AppDelegate.h */,
 				0343F9A222DF407B006B1BC3 /* AppDelegate.m */,
-				0343F9A422DF407B006B1BC3 /* ViewController.h */,
-				0343F9A522DF407B006B1BC3 /* ViewController.m */,
+				0343F9A422DF407B006B1BC3 /* LogInViewController.h */,
+				0343F9A522DF407B006B1BC3 /* LogInViewController.m */,
 				0343F9A722DF407B006B1BC3 /* Main.storyboard */,
 				0343F9AA22DF407D006B1BC3 /* Assets.xcassets */,
 				0343F9AC22DF407D006B1BC3 /* LaunchScreen.storyboard */,
 				0343F9AF22DF407D006B1BC3 /* Info.plist */,
 				0343F9B022DF407D006B1BC3 /* main.m */,
+				0343F9B722DFA458006B1BC3 /* RegisterViewController.h */,
+				0343F9B822DFA458006B1BC3 /* RegisterViewController.m */,
 			);
 			path = GithubViewer;
 			sourceTree = "<group>";
@@ -140,9 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0343F9A622DF407B006B1BC3 /* ViewController.m in Sources */,
+				0343F9A622DF407B006B1BC3 /* LogInViewController.m in Sources */,
 				0343F9B122DF407D006B1BC3 /* main.m in Sources */,
 				0343F9A322DF407B006B1BC3 /* AppDelegate.m in Sources */,
+				0343F9B922DFA458006B1BC3 /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@
         <!--Log in-->
         <scene sceneID="tX8-oa-0sJ">
             <objects>
-                <viewController id="fhG-IF-v70" sceneMemberID="viewController">
+                <viewController id="fhG-IF-v70" customClass="LogInViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4rj-A5-K9Y"/>
                         <viewControllerLayoutGuide type="bottom" id="TfO-sA-qaB"/>
@@ -78,6 +78,9 @@
                                         <state key="normal" title="Log in">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginButtonClicked:" destination="fhG-IF-v70" eventType="touchUpInside" id="XgK-R5-fXx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUB-yJ-gwV">
                                         <rect key="frame" x="159" y="305" width="57" height="30"/>
@@ -116,6 +119,10 @@
                         <viewLayoutGuide key="safeArea" id="MCx-rE-r92"/>
                     </view>
                     <navigationItem key="navigationItem" title="Log in" id="Bw5-ic-nk3"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="zE6-cd-Lxy" id="kDp-t7-vcl"/>
+                        <outlet property="passwordTextField" destination="p6F-m4-SQq" id="lhi-Th-T5C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69x-EW-C4X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -124,7 +131,7 @@
         <!--Register-->
         <scene sceneID="Erm-WV-DyY">
             <objects>
-                <viewController title="Register" id="8PG-M1-kW6" sceneMemberID="viewController">
+                <viewController title="Register" id="8PG-M1-kW6" customClass="RegisterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PS1-SP-Lmt"/>
                         <viewControllerLayoutGuide type="bottom" id="D9O-xN-00O"/>
@@ -199,6 +206,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerButtonClicked:" destination="8PG-M1-kW6" eventType="touchUpInside" id="Nn1-od-Zae"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -212,6 +222,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dh8-G6-ICP"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="aMI-j8-lD0" id="eDb-nL-9CE"/>
+                        <outlet property="emailTextField" destination="M0H-sf-mlf" id="XNE-Rg-oRp"/>
+                        <outlet property="passwordTextField" destination="5PK-x7-iTa" id="WSN-Ew-DpW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="198-Lh-vLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
