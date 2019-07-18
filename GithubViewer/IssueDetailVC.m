@@ -8,6 +8,7 @@
 #import "IssueDetailVC.h"
 #import "AFNHelper.h"
 #import <MMMarkdown/MMMarkdown.h>
+#import "Issue.h"
 
 @interface IssueDetailVC ()
 
@@ -21,19 +22,14 @@
 
     self.title = @"Issue Details";
     
-    self.issueTitleLabel.text = [self.issue valueForKey:@"title"];
-    self.userLabel.text = [NSString stringWithFormat:@"Created by %@", [[self.issue objectForKey:@"user"] valueForKey:@"login"]];
+    self.issueTitleLabel.text = self.issue.title;
+    self.userLabel.text = self.issue.createdBy;
     
-    self.commentsLabel.text = [NSString stringWithFormat:@"Comments: %@", [self.issue valueForKey:@"comments"]];
-    NSArray *labels = [self.issue objectForKey:@"labels"];
-    self.labelsLabel.text = [NSString stringWithFormat:@"Labels: %lu", (unsigned long)labels.count];
-    NSString *state = [self.issue valueForKey:@"state"];
-    state = [state isEqualToString:@"open"] ? @"Pending": @"Resolved";
-    self.stateLabel.text = [NSString stringWithFormat:@"State: %@", state];
+    self.commentsLabel.text = self.issue.comments;
+    self.labelsLabel.text = self.issue.labels;
+    self.stateLabel.text = self.issue.state;
     
-    NSLog(@"Issue %@", self.issue);
-    
-    NSString* markedDownString = [self.issue valueForKey:@"body"];
+    NSString* markedDownString = [self.issue body];
     NSError  *error;
     NSString *htmlString = [MMMarkdown HTMLStringWithMarkdown:markedDownString error:&error];
     [self.webView loadHTMLString:htmlString baseURL:nil];

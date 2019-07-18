@@ -127,18 +127,8 @@
 			children = (
 				0343F9A122DF407B006B1BC3 /* AppDelegate.h */,
 				0343F9A222DF407B006B1BC3 /* AppDelegate.m */,
-				0343F9A422DF407B006B1BC3 /* LogInViewController.h */,
-				0343F9A522DF407B006B1BC3 /* LogInViewController.m */,
-				0343F9B722DFA458006B1BC3 /* RegisterViewController.h */,
-				0343F9B822DFA458006B1BC3 /* RegisterViewController.m */,
-				0343F9BA22E07088006B1BC3 /* RepoViewController.h */,
-				0343F9BB22E07088006B1BC3 /* RepoViewController.m */,
-				0343F9E122E07118006B1BC3 /* IssueListVC.h */,
-				0343F9E222E07118006B1BC3 /* IssueListVC.m */,
-				0343F9E522E07133006B1BC3 /* IssueDetailVC.h */,
-				0343F9E422E07133006B1BC3 /* IssueDetailVC.m */,
-				0343F9F122E07ECC006B1BC3 /* Issue.h */,
-				0343F9F222E07ECC006B1BC3 /* Issue.m */,
+				0343F9F422E0A28E006B1BC3 /* ViewControllers */,
+				0343F9F522E0A2B8006B1BC3 /* Model */,
 				0343F9A722DF407B006B1BC3 /* Main.storyboard */,
 				0343F9BD22E070ED006B1BC3 /* HelperClasses */,
 				0343F9AA22DF407D006B1BC3 /* Assets.xcassets */,
@@ -186,6 +176,32 @@
 				0343F9D422E070ED006B1BC3 /* AFNetworkActivityIndicatorManager.h */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		0343F9F422E0A28E006B1BC3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0343F9A422DF407B006B1BC3 /* LogInViewController.h */,
+				0343F9A522DF407B006B1BC3 /* LogInViewController.m */,
+				0343F9B722DFA458006B1BC3 /* RegisterViewController.h */,
+				0343F9B822DFA458006B1BC3 /* RegisterViewController.m */,
+				0343F9BA22E07088006B1BC3 /* RepoViewController.h */,
+				0343F9BB22E07088006B1BC3 /* RepoViewController.m */,
+				0343F9E122E07118006B1BC3 /* IssueListVC.h */,
+				0343F9E222E07118006B1BC3 /* IssueListVC.m */,
+				0343F9E522E07133006B1BC3 /* IssueDetailVC.h */,
+				0343F9E422E07133006B1BC3 /* IssueDetailVC.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0343F9F522E0A2B8006B1BC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0343F9F122E07ECC006B1BC3 /* Issue.h */,
+				0343F9F222E07ECC006B1BC3 /* Issue.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

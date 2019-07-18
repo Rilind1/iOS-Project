@@ -6,10 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Issue.h"
 
 @interface IssueDetailVC : UIViewController
 
-@property (nonatomic, strong) NSDictionary *issue;
+@property (nonatomic, strong) Issue *issue;
 
 @property (weak, nonatomic) IBOutlet UILabel *issueTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *userLabel;
