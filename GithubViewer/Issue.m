@@ -15,6 +15,16 @@
     if (self) {
         self.title = [dict objectForKey:@"title"];
         self.createdAt = [self configureAgeLabelForIssue: dict];
+        self.createdBy = [NSString stringWithFormat:@"Created by %@", [[dict objectForKey:@"user"] valueForKey:@"login"]];
+        self.comments = [NSString stringWithFormat:@"Comments: %@", [dict valueForKey:@"comments"]];
+        
+        NSArray *labels = [dict objectForKey:@"labels"];
+        self.labels = [NSString stringWithFormat:@"Labels: %lu", (unsigned long)labels.count];
+        NSString *state = [dict valueForKey:@"state"];
+        state = [state isEqualToString:@"open"] ? @"Pending": @"Resolved";
+        self.state = [NSString stringWithFormat:@"State: %@", state];
+        
+        self.body = [dict valueForKey:@"body"];
     }
     return self;
 }

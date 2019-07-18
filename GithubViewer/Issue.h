@@ -13,7 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *createdAt;
-@property (strong, nonatomic) NSString *formattedPhone;
+@property (strong, nonatomic) NSString *createdBy;
+@property (strong, nonatomic) NSString *comments;
+@property (strong, nonatomic) NSString *labels;
+@property (strong, nonatomic) NSString *state;
+@property (strong, nonatomic) NSString *body;
+
 
 - (id) initWithDict: (NSDictionary *)dict;
 
